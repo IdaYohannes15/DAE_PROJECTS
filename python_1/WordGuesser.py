@@ -2,10 +2,13 @@ import random
 
 # List of colors to choose from
 words = ["red", "orange", "yellow", "green", "blue", "purple", "indigo", "violet", "magenta", "pink", "gray", "black", "brown", "silver", "maroon", "burgundy", "bronze", "golden", "beige", "navy", "white", "coral", "cerulean", "scarlet", "turquoise", "saffron", "crismon", "periwinkle", "teal", "amethyst", "charcoal", "lavender", "sage", "vermillion", "emerald", "ginger", "platinum", "skyblue"]
+
+# Pick a random color between 3 and 10 letters
 def choose_word ():  
-    # Pick a random color between 3 and 10 letters
     valid_words = [word for word in words if 3 <= len(word) <=10]
     return random.choice(valid_words)
+
+# Tells the program how to run the game
 def play_game():
     word = choose_word()
     guessed = ["_"] * len(word) # Hidden version of color
@@ -17,7 +20,7 @@ def play_game():
     print("You have 10 tries to guess letters or the full word!")
 
     while attempts_left > 0:
-        print("\nWord:", " ".join(guessed))
+        print("\nColor:", " ".join(guessed))
         print("Tries left:", attempts_left)
         print("Guessed letters:", ", ".join(guessed_letters))
 
@@ -50,7 +53,8 @@ def play_game():
 
     print("\n❌ You're out of tries! The color was:", word)
 
-def main():
+# This function allows the program to run
+def main(): 
     play_again = "yes"
     while play_again.lower() == "yes":
         play_game()

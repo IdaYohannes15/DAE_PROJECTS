@@ -1,14 +1,14 @@
 import random
 
 # List of colors to choose from
-words = ["red", "orange", "yellow", "green", "blue", "purple", "indigo", "violet", "magenta", "pink", "gray", "black", "brown", "silver", "maroon", "burgundy", "bronze", "golden", "beige", "navy", "white", "coral", "cerulean", "scarlet", "turquoise", "saffron", "crismon", "periwinkle", "teal", "amethyst", "charcoal", "lavender", "sage", "vermillion", "emerald", "ginger", "platinum", "skyblue"]
+words = ["red", "orange", "yellow", "green", "blue", "purple", "indigo", "violet", "magenta", "pink", "gray", "black", "brown", "silver", "maroon", "burgundy", "bronze", "golden", "beige", "navy", "white", "coral", "cerulean", "scarlet", "turquoise", "saffron", "crimson", "periwinkle", "teal", "amethyst", "charcoal", "lavender", "sage", "vermillion", "emerald", "ginger", "platinum", "skyblue"]
 
-# Pick a random color between 3 and 10 letters
+# Picks a random color from the list above that is between 3 and 10 letters
 def choose_word ():  
     valid_words = [word for word in words if 3 <= len(word) <=10]
     return random.choice(valid_words)
 
-# Tells the program how to run the game
+# Runs one full round of the game, including displaying the dashes for the word, allowing player to guess, responds accordingly to the guesses (correct/incorrect), and keeps track of tries.
 def play_game():
     word = choose_word()
     guessed = ["_"] * len(word) # Hidden version of color
@@ -53,7 +53,7 @@ def play_game():
 
     print("\n❌ You're out of tries! The color was:", word)
 
-# This function allows the program to run
+# This function allows the program to run and gives the option to play again (loop)
 def main(): 
     play_again = "yes"
     while play_again.lower() == "yes":

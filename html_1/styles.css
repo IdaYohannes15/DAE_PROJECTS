@@ -2,10 +2,20 @@ body{
    background-color: mediumslateblue
 }
 h1{
-    color: white
-    font-family: 
-    text-align: center
+    color: white;
+    font-family: Helvetica;
+    background-color: purple;
+    text-align: center;
+    padding: 50px;
 }
 #para1{
     text-align: center;
+}
+button{
+    font-size: 50px;
+}
+footer{
+    padding: 50px;
+    text-align: center;
+    background-color: navy;
 }

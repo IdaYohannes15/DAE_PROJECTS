@@ -5,38 +5,120 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIPO</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
 <header>
     <h1>KIPO</h1>
 </header>
+<section>
     <main>More Games Coming Soon...</main>
     <p>Welcome to KIPO! Come here to play games, learn, and have fun!</p>
+</section>
+
+<video controls width="600" height="400">
+    <source src="" type="video/mp4">
+    <!-- Fallback text for older browsers -->
+    Your browser does not support the video tag.
+</video>
+
+<audio controls>
+    <source src="/Users/hs27/Desktop/DAE_PROJECTS/html_1/mondamusic-lofi-beats-499181.mp3" type="audio/mpeg">
+    <!-- Fallback text for older browsers -->
+    Your browser does not support the audio element.
+</audio>
+
+
+<form action="/submit_page" method="POST">
+    <!-- Text Input Field -->
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="Enter your username"><br><br>
+
+    <!-- Textarea Field -->
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea><br><br>
+
+    <!-- Checkbox Inputs -->
+    <p>Select your interests (select all that apply):</p>
+    <input type="checkbox" id="interest1" name="interests" value="action/adventure">
+    <label for="interest1"> Action/Adventure</label><br>
+    <input type="checkbox" id="interest2" name="interests" value="creative">
+    <label for="interest2"> Creative</label><br>
+    <input type="checkbox" id="interest3" name="interests" value="multiplayer">
+    <label for="interest3"> Multiplayer</label><br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Submit Form">
+</form>
+
+<table>
+    <tr>
+        <!-- Cell spanning 2 columns -->
+        <th id="TT" rowspan="2">Category</th> 
+        <tr>
+        <td id="TT">Action</td>
+        <td id="TT">Creative</td>
+        </tr>
+    </tr>
+   <tr>
+        <!-- Cell spanning 2 columns -->
+        <th id="TT" rowspan="2">Players</th> 
+        <tr>
+        <td id="TT">1-2</td>
+        <td id="TT">1-4</td>
+        </tr>
+    </tr>
+</table>
+
     <nav>
       <ul>
         <div class="game-container">
            <div class="game-card">
                  <a href="subwaysurfers.html">
                  <img src="subwaysurfers.jpeg" width="200" height="200" alt="Play Subway Surfers">
-                 <p id="gamename">Subway Surfers</p>
+                 <p id="gamename"><cite>Subway Surfers</cite></p>
                  </a>
            </div>
+
            <div class="game-card">
             <a href="templerun.html">
            <img src="templerun.png.jpeg" width="200" height="200" alt="Play Temple Run">
-           <p id="gamename">Temple Run</p>
+           <p id="gamename"><cite>Temple Run</cite></p>
            </a>
           </div>
 
          <div class="game-card">
           <a href="geometrydash.html">
           <img src="geometry-dash.png.jpg" width="200" height="200" alt="Play Geometry Dash">
-          <p id="gamename">Geometry Dash</p>
+          <p id="gamename"><cite>Geometry Dash</cite></p>
           </a>
          </div>
+
+         <div class="game-card">
+          <a href="abc.html">
+          <img src="abc.jpg" width="200" height="200" alt="Play abc">
+          <p id="gamename"><cite>abc</cite></p>
+          </a>
+         </div>
+
+          <div class="game-card">
+          <a href="abc.html">
+          <img src="abc.jpg" width="200" height="200" alt="Play abc">
+          <p id="gamename"><cite>abc</cite></p>
+          </a>
+         </div>
+
+          <div class="game-card">
+          <a href="abc.html">
+          <img src="abc.jpg" width="200" height="200" alt="Play abc">
+          <p id="gamename"><cite>abc</cite></p>
+          </a>
+         </div>
+
         </div>
       </ul>
     </nav>
+    <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank" rel="noopener noreferrer">Google Snake</a>
     <footer>Contact us for feedback at officialemail@gmail.com</footer>
 </body>
 </html>

@@ -1,8 +1,98 @@
+@import url('https://fonts.googleapis.com|Roboto');
+
+
 body{
    background-color: rgb(136, 176, 255);
    display: flex;
    flex-direction: column;
    flex:1 0 auto;
+}
+
+h1{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    background-color:cornflowerblue;
+    text-align: center;
+    border: 5px;
+    border-radius: 20;
+    font-size: 75px;
+    margin-bottom: 5%;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 50px;
+    box-shadow: 10px 10px darkblue;
+    text-shadow: 5px 5px darkblue;
+}
+
+p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color:aliceblue;
+}
+
+#gamename{
+    text-align: left;
+    font-size: 30px;
+    font-family:'Courier New', Courier, monospace;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer{
+    padding: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:cornflowerblue;
+    color: aliceblue;
+    margin: 10px;
+}
+
+button{
+    color:cornflowerblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+main{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color:aliceblue;
+    text-align: center;
+}
+
+table{
+    text-align: center;
+    border: 5px black;
+    border-radius: 25px;
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+label{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 30px;
+    color:aliceblue;
+}
+
+th{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color:aliceblue;
+}
+
+td{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    color:aliceblue;
+}
+TT{
+
+}
+a{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color:aliceblue;
 }
 
 h1{

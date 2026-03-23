@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KIPO</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-</head>
+    <script src="script.js" defer></script>
+<div class="container"></div>
+  </head>
 <body>
 <header>
-    <h1>KIPO</h1>
+    <h1 id="main-title">KIPO</h1>
 </header>
-<section>
-    <main>More Games Coming Soon...</main>
-    <p>Welcome to KIPO! Come here to play games, learn, and have fun!</p>
-</section>
-
+<main>
+    <section>
+        <p>More Games Coming Soon...</p>
+        <p>Welcome to KIPO! Come here to play games, learn, and have fun!</p>
+    </section>
+</main>
 <video controls width="600" height="400">
     <source src="istockphoto-1428764191-640_adpp_is.mp4" type="video/mp4">
     <!-- Fallback text for older browsers -->
@@ -52,22 +54,22 @@
 </form>
 
 <table>
-    <tr>
-        <!-- Cell spanning 2 columns -->
-        <th id="TT" rowspan="2">Category</th> 
-        <tr>
-        <td id="TT">Action</td>
-        <td id="TT">Creative</td>
-        </tr>
-    </tr>
-   <tr>
-        <!-- Cell spanning 2 columns -->
-        <th id="TT" rowspan="2">Players</th> 
-        <tr>
-        <td id="TT">1-2</td>
-        <td id="TT">1-4</td>
-        </tr>
-    </tr>
+  <tr>
+    <th rowspan="2">Category</th>
+    <th colspan="2">Game Type</th>
+  </tr>
+  <tr>
+    <td>Action</td>
+    <td>Creative</td>
+  </tr>
+  <tr>
+    <th colspan="3">Players</th>
+  </tr>
+  <tr>
+    <td>Category</td>
+    <td>1-2</td>
+    <td>1-4</td>
+  </tr>
 </table>
 
     <nav>
@@ -76,42 +78,42 @@
            <div class="game-card">
                  <a href="subwaysurfers.html">
                  <img src="subwaysurfers.jpeg" width="200" height="200" alt="Play Subway Surfers">
-                 <p id="gamename"><cite>Subway Surfers</cite></p>
+                 <p class="gamename"><cite>Subway Surfers</cite></p>
                  </a>
            </div>
 
            <div class="game-card">
             <a href="templerun.html">
            <img src="templerun.png.jpeg" width="200" height="200" alt="Play Temple Run">
-           <p id="gamename"><cite>Temple Run</cite></p>
+           <p class="gamename"><cite>Temple Run</cite></p>
            </a>
           </div>
 
          <div class="game-card">
           <a href="geometrydash.html">
           <img src="geometry-dash.png.jpg" width="200" height="200" alt="Play Geometry Dash">
-          <p id="gamename"><cite>Geometry Dash</cite></p>
+          <p class="gamename"><cite>Geometry Dash</cite></p>
           </a>
          </div>
 
          <div class="game-card">
           <a href="abc.html">
           <img src="abc.jpg" width="200" height="200" alt="Play abc">
-          <p id="gamename"><cite>abc</cite></p>
+          <p class="gamename"><cite>abc</cite></p>
           </a>
          </div>
 
           <div class="game-card">
           <a href="abc.html">
           <img src="abc.jpg" width="200" height="200" alt="Play abc">
-          <p id="gamename"><cite>abc</cite></p>
+          <p class="gamename"><cite>abc</cite></p>
           </a>
          </div>
 
           <div class="game-card">
           <a href="abc.html">
           <img src="abc.jpg" width="200" height="200" alt="Play abc">
-          <p id="gamename"><cite>abc</cite></p>
+          <p class="gamename"><cite>abc</cite></p>
           </a>
          </div>
 
@@ -127,7 +129,10 @@
 
 <p>This will NOT be styled</p>
 
+<p>The <code>button</code> tag defines a clickable button</p>
+
     <a href="https://www.google.com/fbx?fbx=snake_arcade" target="_blank" rel="noopener noreferrer">Google Snake</a>
     <footer>Contact us for feedback at officialemail@gmail.com</footer>
 </body>
+</div>
 </html>

@@ -119,3 +119,9 @@ a{
     font-size: 20px;
     color:aliceblue;
 }
+#gamehomebutton {
+    color:cornflowerblue;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
